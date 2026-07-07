@@ -1,0 +1,21 @@
+services:
+  backend:
+    build: ./angular-cc-1-server
+    container_name: angular-cc-1-server
+    ports:
+      - '3000:3000'
+    volumes:
+      - backend_logs:/app/logs
+    restart: unless-stopped
+
+  frontend:
+    build: ./angular-cc-1-client
+    container_name: angular-cc-1-client
+    ports:
+      - '8080:80'
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  backend_logs:

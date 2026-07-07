@@ -1,0 +1,6 @@
+[submodule "angular-cc-1-client"]
+	path = angular-cc-1-client
+	url = git@github.com:TamaraAguilar/angular-cc-1-client.git
+[submodule "angular-cc-1-server"]
+	path = angular-cc-1-server
+	url = git@github.com:TamaraAguilar/angular-cc-1-server.git
