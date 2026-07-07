@@ -42,11 +42,11 @@ Entorno web compuesto por dos servicios containerizados con Docker:
 
 ## Cómo levantar el proyecto
 
-\`\`\`bash
+```bash
 docker compose up -d --build
-\`\`\`
+```
 
 Verificar contenedores activos:
-\`\`\`bash
+```bash
 docker ps
-\`\`\`
+```
